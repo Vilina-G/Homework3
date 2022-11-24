@@ -8,6 +8,7 @@ var num = Convert.ToInt32(Console.ReadLine());
 var start_text = "";
 for (int i = 1; i <= num; i++)
 {
-    start_text = start_text.Insert(start_text.Length,Convert.ToString(Math.Pow(i, 3)) + ", "); 
+    //Для вставки одной строки в другую применяется функция Insert:
+    start_text = start_text.Insert(start_text.Length, Convert.ToString(Math.Pow(i, 3)) + ", ");
 }
 Console.WriteLine(start_text);
